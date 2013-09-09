@@ -1,0 +1,49 @@
+@import 'mixins';
+
+//
+// Page Flip plugin
+// --------------------------------------------------
+.layout3d {
+	.perspective(700px);
+	.backface-visibility(hidden);
+	.transform-style(preserve-3d);
+	//position:relative;
+	overflow: visible;	
+}
+
+//-> Flip prefixed stuff
+.flip-container {
+	&.flip-y {
+		.flip-split-0 {
+			.transform-origin(bottom center);
+		}
+		.flip-split-1 {
+			.transform-origin(top center);
+		}
+	}
+	&.flip-x {
+		.flip-split-0 {
+			.transform-origin(center right);
+
+		}
+		.flip-split-1 {
+			.transform-origin(center left);
+		}
+	}
+	//-> Essential hide
+	.no-opacity {
+		.opacity(0);
+	}
+	//-> Standard flow
+	.flip-before, .flip-after, .flip-backplate-after, .flip-backplate-before {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 200;
+	}
+	.flip-after, .flip-before {
+		.transform-style(preserve-3d);
+	}
+
+	.layout3d;
+}

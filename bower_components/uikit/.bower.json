@@ -1,0 +1,32 @@
+{
+  "name": "uikit",
+  "version": "1.1.0",
+  "main": [
+    "dist/js/uikit.min.js",
+    "dist/css/uikit.min.css",
+    "dist/fonts/fontawesome-webfont.eot",
+    "dist/fonts/fontawesome-webfont.ttf",
+    "dist/fonts/fontawesome-webfont.woff"
+  ],
+  "dependencies": {
+    "jquery": "~1.8"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/uikit/uikit",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.0",
+    "commit": "64d33dce1ee63dc389f275c67d41bafe2e36ce92"
+  },
+  "_source": "git://github.com/uikit/uikit.git",
+  "_target": "~1.1.0",
+  "_originalSource": "uikit",
+  "_direct": true
+}
